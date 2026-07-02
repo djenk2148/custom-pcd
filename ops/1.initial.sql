@@ -26,11 +26,10 @@ INSERT INTO tags (name) VALUES ('UK Streaming Services');
 INSERT INTO tags (name) VALUES ('Unwanted');
 
 -- ============================================================================
--- CUSTOM FORMATS
+-- RADARR NAMING
 -- ============================================================================
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1080p', '**1080p**
+INSERT INTO radarr_naming (name, rename, movie_format, movie_folder_format, replace_illegal_characters, colon_replacement_format) VALUES ('Jellyfin IMDB', 1, '{Movie CleanTitle} {(Release Year)}', '{Movie CleanTitle} ({Release Year})', 0, 'smart');
 
-This Custom Format can boost 1080p releases. It is only useful if you use Merge Qualities in your Quality Profile.', 0);
 -- ============================================================================
 -- SONARR NAMING
 -- ============================================================================
