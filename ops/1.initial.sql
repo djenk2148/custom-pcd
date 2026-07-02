@@ -1293,3 +1293,8 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ZR', '\b(ZR)\b|-ZR-', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ZR (2)', '\b(ZR)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('zza', '\[zza\]|-zza\b', NULL, NULL);
+
+-- ============================================================================
+-- SONARR NAMING
+-- ============================================================================
+INSERT INTO sonarr_naming (name, rename, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format, replace_illegal_characters, colon_replacement_format, custom_colon_replacement_format, multi_episode_style) VALUES ('Jellyfin TVDB', 1, '{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90}', '{Series TitleYear} - {Air-Date} - {Episode CleanTitle:90}', '{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle:90}', '{Series TitleYear} [tvdbid-{TvdbId}]', 'Season {season:00}', 0, 4, NULL, 5);
