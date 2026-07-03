@@ -1,4 +1,10 @@
 -- ============================================================================
+-- REGULAR EXPRESSIONS - General
+-- ============================================================================
+
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('_nzb', '_nzb\b', NULL, NULL);
+
+-- ============================================================================
 -- ACCESSIBILITY
 -- ============================================================================
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES (''Accessibility: AD'', ''(?ix)(?:\[(?:[^\]]*\b(?:ad|audio[ ._-]?description|audiodescription)\b[^\]]*)\]|(?<![\w.])(?:ad|audio[ ._-]?description|audiodescription)(?![\w.]))'', NULL, NULL);
