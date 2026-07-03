@@ -31,3 +31,31 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: FLAC', '(?i)\bFLAC(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: OPUS', '(?i)\bOPUS(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: PCM', '(?i)\bPCM(\b|\d)', NULL, NULL);
+
+
+-- ============================================================================
+-- COLOR DEPTH
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Color Depth: 8-bit', '(?i)(8[ .-]?bit)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Color Depth: 10-bit', '(?i)(10[ .-]?bit)', NULL, NULL);
+
+
+-- ============================================================================
+-- FILE FORMAT
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: AVI', '(?i)\bavi\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: M2TS', '(?i)\m2ts\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: MKV', '(?i)\bmkv\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: MOV', '(?i)\bmov\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: MP4', '(?i)\bmp4\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: WMV', '(?i)\bwmv\b', NULL, NULL);
+
+
+-- ============================================================================
+-- VIDEO CODECS
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: 264', '[xXhH][ ._-]*264|\bAVC\d?\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: 265', '[xXhH][ ._-]*265|\bHEVC\d?\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: 266', '[xXhH][ ._-]*266|\bVVC\d?\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: AV1', '\bAV1\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: MPEG2', '(?i)(MPEG[-.]?2)', NULL, NULL);
