@@ -19,6 +19,28 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 
 
 -- ============================================================================
+-- AUDIO CODECS
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: AAC', '\bAAC(\b|\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: AC-3', '\bAC[.-]?3', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: E-AC-3', '\bE[-]?AC[.-]?3', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS', '(?i)\bdts\b(?![\s._-]*(?:hd|ma))|\bdts(?=\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS-HD', '(?i)\bdts[\s._-]*hd\b(?![\s._-]*ma)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS-HD MA', '(?i)\bdts[\s._-]*hd[\s._-]*ma\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS-X', '(?i)\bdts[\s._:-]*x\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: FLAC', '(?i)\bFLAC(\b|\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: OPUS', '(?i)\bOPUS(\b|\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: PCM', '(?i)\bPCM(\b|\d)', NULL, NULL);
+
+
+-- ============================================================================
+-- COLOR DEPTH
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Color Depth: 8-bit', '(?i)(8[ .-]?bit)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Color Depth: 10-bit', '(?i)(10[ .-]?bit)', NULL, NULL);
+
+
+-- ============================================================================
 -- FILE FORMAT
 -- ============================================================================
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('File Format: AVI', '(?i)\bavi\b', NULL, NULL);
