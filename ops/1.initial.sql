@@ -24,6 +24,8 @@ INSERT INTO tags (name) VALUES ('SQP');
 INSERT INTO tags (name) VALUES ('Standard');
 INSERT INTO tags (name) VALUES ('UK Streaming Services');
 INSERT INTO tags (name) VALUES ('Unwanted');
+INSERT INTO tags (name) VALUES ('Video Codec');
+
 
 -- ============================================================================
 -- RADARR NAMING
