@@ -9,4 +9,4 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Acces
 -- ============================================================================
 -- VIDEO CODECS
 -- ============================================================================
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Video Codec: AV1', '', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Video Codec: AV1', 'test', 0);
