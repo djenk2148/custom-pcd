@@ -1,1 +1,7 @@
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 1.0', NULL, 0);
+-- ============================================================================
+-- ACCESSIBILITY
+-- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: AD', 'Audio description (AD) is a narration track that describes key visual elements—like character actions, facial expressions, settings, and on-screen text—in television, films, or live performances. It is typically inserted during natural pauses in the dialogue to make visual media fully accessible to individuals who are blind or have low vision.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: ASL', 'American Sign Language is a complete, natural language with its own grammar and syntax that differs from English. It is expressed through movements of the hands, face, and body and is primarily used in the United States and Canada.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: BASL', 'BASL is a unique variety of ASL that developed primarily due to the racial segregation of schools in the American South during the 19th and 20th centuries.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: BSL', 'British Sign Language, a visual-gestural language used primarily by the UK Deaf community. It has its own unique grammar and syntax, completely distinct from spoken English. It became legally recognized in England, Wales, and Scotland under the BSL Act 2022.', 0);
