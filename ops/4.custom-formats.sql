@@ -5,3 +5,13 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Acces
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: ASL', 'American Sign Language is a complete, natural language with its own grammar and syntax that differs from English. It is expressed through movements of the hands, face, and body and is primarily used in the United States and Canada.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: BASL', 'BASL is a unique variety of ASL that developed primarily due to the racial segregation of schools in the American South during the 19th and 20th centuries.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: BSL', 'British Sign Language, a visual-gestural language used primarily by the UK Deaf community. It has its own unique grammar and syntax, completely distinct from spoken English. It became legally recognized in England, Wales, and Scotland under the BSL Act 2022.', 0);
+
+-- ============================================================================
+-- RESOLUTIONS
+-- ============================================================================
+
+
+-- ============================================================================
+-- VIDEO CODECS
+-- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Video Codec: AV1', '', 0);
