@@ -7,11 +7,6 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Acces
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Accessibility: BSL', 'British Sign Language, a visual-gestural language used primarily by the UK Deaf community. It has its own unique grammar and syntax, completely distinct from spoken English. It became legally recognized in England, Wales, and Scotland under the BSL Act 2022.', 0);
 
 -- ============================================================================
--- RESOLUTIONS
--- ============================================================================
-
-
--- ============================================================================
 -- VIDEO CODECS
 -- ============================================================================
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Video Codec: AV1', '', 0);
