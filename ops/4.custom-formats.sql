@@ -10,27 +10,59 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Acces
 -- ============================================================================
 -- AUDIO CHANNEL
 -- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 1.0', '1.0 channel audio - standard monaural (mono) sound. It utilizes exactly one audio stream or channel that is distributed equally to all connected speakers.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 2.0', 'An audio channel 2.0 setup is a standard two-channel stereo system. The "2" represents the main left and right speakers, while the ".0" indicates the absence of a dedicated subwoofer for low-frequency effects. It is the classic configuration for listening to music, turntables, and traditional TV setups', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 3.0', 'An audio channel refers to a separate, independent stream of audio data. The term "3.0 audio channel" or "3.0 setup" typically means a 3-channel stereo format consisting of a Left channel, a Right channel, and a dedicated Center channel.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 4.0', 'An audio channel 4.0 (or Quadraphonic sound) is a surround sound system that utilizes four discrete audio channels to feed four independent speakers, typically positioned at the four corners of a room', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 5.1', '5.1 channel audio is the standard for home theater and surround sound. It uses six distinct audio channels—three in the front (left, center, right), two for surround (left and right), and a subwoofer for deep bass—to create an immersive, directional listening experience for movies and music.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Channel: 7.1', '7.1 channel sound is an eight-channel audio system used in home theaters and gaming setups. The "7" refers to seven discrete speakers (front left, front center, front right, side left, side right, rear left, and rear right), while the ".1" denotes a subwoofer for low-frequency bass', 0);
+
+
+-- ============================================================================
+-- AUDIO CODECS
+-- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: AAC', 'Advanced Audio Coding (AAC) is a lossy digital audio compression standard designed as the successor to MP3. It delivers superior sound quality at lower bitrates and is the default audio format for major platforms like Apple Music, YouTube, and digital broadcast radio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: AC3', 'The AC3 (Audio Codec 3) is a lossy digital audio compression format developed by Dolby Labs, commonly known as Dolby Digital. It is primarily used for delivering multi-channel surround sound in cinemas, DVDs, and HDTV broadcasts', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: E-AC3', 'EAC3, or Enhanced AC-3 (often called Dolby Digital Plus or DD+), is an advanced digital audio compression format used across streaming services, Blu-ray discs, and digital TV broadcasts. It provides highly efficient multi-channel audio—supporting up to 15 channels—and is a primary requirement for delivering spatial audio like Dolby Atmos', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: DTS', 'DTS (Digital Theater Systems) is a premier family of multichannel audio codecs designed to deliver highly immersive, high-definition surround sound for cinemas, home theaters, and gaming. It is Dolby Digitals primary competitor in the home and commercial audio space', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: DTS-HD', 'DTS-HD is a family of high-definition surround sound codecs designed primarily for Blu-ray media and advanced home theaters. It includes two main formats: DTS-HD High Resolution Audio (a lossy, higher-bitrate format for music and 7.1 surround) and DTS-HD Master Audio (a bit-for-bit lossless format).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: DTS-HD MA', 'DTS-HD Master Audio (DTS-HD MA) is a proprietary, lossless audio codec developed by DTS. It is capable of bit-for-bit reproduction of the original master studio track, supporting up to 8 discrete channels (7.1 surround) at high sampling rates (up to 192 kHz / 24-bit).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: DTS-X', 'DTS:X is an object-based audio codec created by Xperi that delivers immersive 3D surround sound by mapping sounds to specific locations in a room, including overhead. It is the main competitor to Dolby Atmos and is widely used in movie theaters, Blu-ray discs, and IMAX Enhanced streaming content.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: FLAC', 'FLAC (Free Lossless Audio Codec) is a widely used, open-source audio compression format. Unlike MP3 or AAC, which permanently delete "inaudible" frequencies to save space, FLAC compresses audio losslessly. It shrinks files by 40–50% without discarding a single bit of the original recording.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: MP3', 'The MP3 (MPEG-1 Audio Layer III) codec is a universally supported digital audio format that uses lossy compression to reduce file sizes by up to 95%. By discarding audio data the human ear struggles to perceive, it achieves file sizes roughly one-tenth that of uncompressed CD audio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: OPUS', 'The Opus audio codec is a highly versatile, open-source, and royalty-free lossy audio format standardized by the IETF. It seamlessly combines speech-optimized technology with high-fidelity music compression, making it the industry standard for real-time internet communications (like Discord and WebRTC) and high-efficiency streaming.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Audio Codec: PCM', 'PCM (Pulse-Code Modulation) is the standard method for converting analog audio into digital data. Unlike lossy formats, PCM is uncompressed. It records the exact waveform at regular intervals (sample rate) with specific amplitude precision (bit depth), offering lossless, studio-quality sound', 0);
+
 
 -- ============================================================================
 -- COLOR DEPTH
 -- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Color Depth: 8-bit', '8-bit color depth means an image or display uses 8 bits of data for each primary color channel (Red, Green, and Blue). This results in 2⁸ (or 256) possible shades per channel, combining to produce over 16.7 million total colors. It is the standard for most SDR monitors, web content, and standard photography.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Color Depth: 10-bit', '10-bit color depth (30-bit color) refers to allocating 10 bits of data to each of the Red, Green, and Blue (RGB) channels. This yields 1,024 shades per channel, producing over 1.07 billion total colors. It is widely used in High Dynamic Range (HDR) workflows to eliminate color banding in gradients.', 0);
+
 
 -- ============================================================================
 -- FILE FORMAT
 -- ============================================================================
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: AVI', 'AVI (Audio Video Interleave) is a multimedia container format introduced by Microsoft in 1992. It holds both audio and video data in a synchronized format using very little compression, which results in high-quality playback but very large file sizes.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: M2TS', 'An M2TS file (MPEG-2 Transport Stream is a high-definition video container format primarily used for Blu-ray discs and AVCHD camcorders.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: MKV', 'MKV (Matroska Video) is a free, open-source file container that bundles video, audio, and subtitle tracks into a single file. Unlike standard video formats, it acts as a "wrapper", meaning you can store an entire movie with multiple audio languages and subtitle files in one place.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: MOV', 'A MOV file is a multimedia container format developed by Apple. It stores high-quality video, audio, and subtitles in separate tracks, making it the native format for iPhones and Macs. While excellent for video editing, MOV files generally have larger file sizes and lower compatibility than MP4s.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: MP4', 'MP4 (MPEG-4 Part 14) is the most widely used digital multimedia container format. It stores video, audio, subtitles, and still images. It is universally compatible with devices and web platforms due to its high compression and excellent post-compression quality.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('File Format: WMV', 'A WMV (Windows Media Video) file is a compressed video format developed by Microsoft', 0);
 
 
 -- ============================================================================
 -- RESOLUTIONS
 -- ============================================================================
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 360p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 480p', '', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 360p', 'A standard-definition resolution of 640 × 360 pixels. While it results in a highly compressed file, it requires significantly less data and is ideal for streaming over slow internet connections or on mobile devices', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 480p', '480p is a standard-definition (SD) video resolution featuring 480 vertical lines and a progressive scan format. For widescreen (16:9) displays, it typically measures 854x480 pixels. It is commonly used for DVDs, analog TV broadcasts, and older media.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 560p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 576p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 720p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 1080p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 1440p', '', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 2160p', '', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 576p', '576p is a standard-definition (SD) video resolution featuring 576 vertical lines and 720 horizontal pixels, resulting in an aspect ratio usually formatted for widescreen (16:9) or older formats (4:3).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 720p', '720p is a progressive High Definition (HD) video format with a resolution of 1280 × 720 pixels. It provides roughly 0.9 megapixels.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 1080p', '1080p resolution, commonly known as Full HD (FHD), refers to a display format of 1920 × 1080 pixels.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 1440p', '1440p resolution (2560 × 1440 pixels), commonly called Quad HD or QHD, is a display standard offering roughly 78% more pixels than 1080p.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Resolution: 2160p', '2160p resolution—commonly marketed as 4K Ultra HD (UHD)—refers to a display size of 3840 x 2160 pixels.', 0);
 
 
 -- ============================================================================
