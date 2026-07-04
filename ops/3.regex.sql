@@ -142,41 +142,41 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 -- ============================================================================
 -- STREAMING SERVICES - ANIME
 -- ============================================================================
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ABEMA', '\b(ABEMA[ ._-]?(TV)?)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ADN', '\b(ADN)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('B-Global', '\b(B[ .-]?Global)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Bilibili', '\b(Bili(bili)?)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Crunchyroll', '\b(C(runchy)?[ .-]?R(oll)?)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Funimation', '\b(FUNi(mation)?)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HIDIVE', '\b(HIDI(VE)?)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VRV', '(?i)\b(vrv)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WKN', '\b(WKN|Waka(nim)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: ABEMA', '\b(ABEMA[ ._-]?(TV)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: ADN', '\b(ADN)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: B-Global', '\b(B[ .-]?Global)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Bilibili', '\b(Bili(bili)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Crunchyroll', '\b(C(runchy)?[ .-]?R(oll)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Funimation', '\b(FUNi(mation)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: HIDIVE', '\b(HIDI(VE)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: VRV', '(?i)\b(vrv)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: WKN', '\b(WKN|Waka(nim)?)\b', NULL, NULL);
 
 
 -- ============================================================================
 -- STREAMING SERVICES - ASIAN
 -- ============================================================================
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('FOD', '\b(fod)\b', 'kgngPG/1', NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Hotstar', '\b(HTSR|DSNPHS|HS)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TVer', '\b(tver)\b', 'ZdWC9D/1', NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TVING', '\b(tving)\b[ ._-]web[ ._-]?(dl|rip)?\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('U-NEXT', '\b(u-next)\b', '04ZSLm/1', NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VIU', '\b(viu)\b[ ._-]web[ ._-]?(dl|rip)?\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VIU Rename', '\[(VIU)\b|\b(VIU)\]', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: FOD', '\b(fod)\b', 'kgngPG/1', NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Hotstar', '\b(HTSR|DSNPHS|HS)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: TVer', '\b(tver)\b', 'ZdWC9D/1', NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: TVING', '\b(tving)\b[ ._-]web[ ._-]?(dl|rip)?\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: U-NEXT', '\b(u-next)\b', '04ZSLm/1', NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: VIU', '\b(viu)\b[ ._-]web[ ._-]?(dl|rip)?\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: VIU Rename', '\[(VIU)\b|\b(VIU)\]', NULL, NULL);
 
 
 -- ============================================================================
 -- STREAMING SERVICES - DUTCH
 -- ============================================================================
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('NLZiet', '\b(nlz|NLZiet)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Pathé', '\b(Pathe)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Videoland', '\b(vdl|Videoland)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: NLZiet', '\b(nlz|NLZiet)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Pathé', '\b(Pathe)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: Videoland', '\b(vdl|Videoland)\b', NULL, NULL);
 
 
 -- ============================================================================
 -- STREAMING SERVICES - FRENCH
 -- ============================================================================
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('AUViO', '\b(AUVIO)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('MyCANAL', '\b(MyCANAL)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('SALTO', '\b(SALTO)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VOSTFR', '\b(VOST.*?FR(E|A)?)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: AUViO', '\b(AUVIO)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: MyCANAL', '\b(MyCANAL)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: SALTO', '\b(SALTO)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Streaming Service: VOSTFR', '\b(VOST.*?FR(E|A)?)\b', NULL, NULL);
