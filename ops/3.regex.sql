@@ -19,11 +19,11 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 
 
 -- ============================================================================
--- AUDIO CODECS
+-- AUDIO CODEC
 -- ============================================================================
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: AAC', '\bAAC(\b|\d)', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: AC-3', '\bAC[.-]?3', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: E-AC-3', '\bE[-]?AC[.-]?3', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: AC3', '\bAC[.-]?3', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: E-AC3', '(?i)\b(?:E[-.]?AC[-.]?3|EAC3|DDP\d*|DD\+\d*|Dolby[ ._-]?Digital[ ._-]?Plus\d*)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS', '(?i)\bdts\b(?![\s._-]*(?:hd|ma))|\bdts(?=\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS-HD', '(?i)\bdts[\s._-]*hd\b(?![\s._-]*ma)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Audio Codec: DTS-HD MA', '(?i)\bdts[\s._-]*hd[\s._-]*ma\b', NULL, NULL);
@@ -53,7 +53,57 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 
 
 -- ============================================================================
--- RESOLUTIONS
+-- FRAME RATE
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 30', '(?i)\b(?:30)[ ._-]?fps\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 48', '(?i)\b(?:48)[ ._-]?fps\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 50', '(?i)\b(?:50)[ ._-]?fps\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 59.94', '(?i)\b(?:59\.?94)[ ._-]?fps\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 60', '(?i)\b(?:60)[ ._-]?fps\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Frame Rate: 120', '(?i)\b(?:120)[ ._-]?fps\b', NULL, NULL);
+
+-- ============================================================================
+-- LANGUAGE
+-- ============================================================================
+
+
+-- ============================================================================
+-- QUALITY FLAG - AUDIO
+-- ============================================================================
+
+
+-- ============================================================================
+-- QUALITY FLAG - VIDEO
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Quality Flag: HFR', '(?i)\b(?:hfr|high[ ._-]?frame[ ._-]?rate)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Quality Flag: Upscaled', '(?i)\b(?:ai[ ._-]?(?:enhanced|upscale(?:d|s)?)|upscaled?|uprez|up-scaled|the[ ._-]?upscaler|rw|aius|re-?grade(?:d)?|nnedi3|esrgan|waifu2x)\b', NULL, NULL);
+
+
+
+
+
+-- ============================================================================
+-- RELEASE GROUP
+-- ============================================================================
+
+
+-- ============================================================================
+-- RELEASE TYPE
+-- ============================================================================
+
+
+-- ============================================================================
+-- RELEASE VERSION
+-- ============================================================================
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Release Version: v0', '(?i)((\b|\d)(v0)\b)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Release Version: v1', '(?i)((\b|\d)(v0?1)\b)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Release Version: v2', '(?i)((\b|\d)(v0?2)\b)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Release Version: v3', '(?i)((\b|\d)(v0?3)\b)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Release Version: v4', '(?i)((\b|\d)(v0?4)\b)', NULL, NULL);
+
+
+-- ============================================================================
+-- RESOLUTION
 -- ============================================================================
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Resolution: 360p', '', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Resolution: 480p', '', NULL, NULL);
@@ -66,7 +116,12 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 
 
 -- ============================================================================
--- VIDEO CODECS
+-- STREAMING SERVICE
+-- ============================================================================
+
+
+-- ============================================================================
+-- VIDEO CODEC
 -- ============================================================================
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: 264', '[xXhH][ ._-]*264|\bAVC\d?\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Video Codec: 265', '[xXhH][ ._-]*265|\bHEVC\d?\b', NULL, NULL);
